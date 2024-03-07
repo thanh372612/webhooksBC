@@ -8,8 +8,11 @@ public class rule_set_define implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "id")
+	@org.kie.api.definition.type.Label("id")
 	private java.lang.String id;
+
+	@org.kie.api.definition.type.Label(value = "name")
+	private java.lang.String name;
 
 	public rule_set_define() {
 	}
@@ -22,8 +25,17 @@ public class rule_set_define implements java.io.Serializable {
 		this.id = id;
 	}
 
-	public rule_set_define(java.lang.String id) {
+	public java.lang.String getName() {
+		return this.name;
+	}
+
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public rule_set_define(java.lang.String id, java.lang.String name) {
 		this.id = id;
+		this.name = name;
 	}
 
 }
