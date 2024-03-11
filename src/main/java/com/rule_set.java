@@ -11,8 +11,11 @@ public class rule_set implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("id")
 	private java.lang.String id;
 
-	@org.kie.api.definition.type.Label(value = "name")
+	@org.kie.api.definition.type.Label("name")
 	private java.lang.String name;
+
+	@org.kie.api.definition.type.Label(value = "defina")
+	private java.lang.String defina;
 
 	public rule_set() {
 	}
@@ -33,9 +36,19 @@ public class rule_set implements java.io.Serializable {
 		this.name = name;
 	}
 
-	public rule_set(java.lang.String id, java.lang.String name) {
+	public java.lang.String getDefina() {
+		return this.defina;
+	}
+
+	public void setDefina(java.lang.String defina) {
+		this.defina = defina;
+	}
+
+	public rule_set(java.lang.String id, java.lang.String name,
+			java.lang.String defina) {
 		this.id = id;
 		this.name = name;
+		this.defina = defina;
 	}
 
 }
