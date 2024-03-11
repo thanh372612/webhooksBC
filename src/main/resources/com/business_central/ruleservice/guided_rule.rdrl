@@ -1,0 +1,9 @@
+package com.business_central.ruleservice;
+
+import java.lang.Number;
+
+rule "guided_rule"
+	dialect "mvel"
+	when
+	then
+end
