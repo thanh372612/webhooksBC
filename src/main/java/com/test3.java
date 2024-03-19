@@ -6,12 +6,24 @@ package com;
 
 public class test3 implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public test3() {
-    }
+	@org.kie.api.definition.type.Label(value = "id")
+	private java.lang.String id;
 
+	public test3() {
+	}
 
+	public java.lang.String getId() {
+		return this.id;
+	}
 
+	public void setId(java.lang.String id) {
+		this.id = id;
+	}
+
+	public test3(java.lang.String id) {
+		this.id = id;
+	}
 
 }
